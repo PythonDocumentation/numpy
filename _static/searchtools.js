@@ -394,7 +394,7 @@ var Search = {
       $u.each(_o, function(o) {
         var _files = o.files;
         if (_files === undefined)
-          return
+          return;
 
         if (_files.length === undefined)
           _files = [_files];
@@ -404,7 +404,7 @@ var Search = {
         for (j = 0; j < _files.length; j++) {
           file = _files[j];
           if (!(file in scoreMap))
-            scoreMap[file] = {}
+            scoreMap[file] = {};
           scoreMap[file][word] = o.score;
         }
       });
